@@ -1,0 +1,19 @@
+table {
+    width: 80%;
+    border-radius: 10px;
+    border-collapse: collapse;
+    margin: 10px auto;
+    
+    border : 3px solid;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #0e023f;
+    color: whitesmoke;
+}

@@ -1,0 +1,33 @@
+<!-- Author:
+ J Ashrith Sai
+ Date of creation: 9/07/2024 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/project-ba/styles/table.css">
+    <script src="/project-ba/shifts-view/shifts-view.js"></script>
+</head>
+<body>
+    <form>
+        <select  id="department-selection" name = "department-selection" required>
+            <option value=""></option>
+            <option value="2">ATC</option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+        <select id="shift-selection" name="shift-selection" required>
+            <option value=""></option>
+            <option value="S1">Shift - I</option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+        <button type="button" onclick="display()">Display</button>
+    </form>
+    <div id="requested-data"></div>
+</body>
+</html>

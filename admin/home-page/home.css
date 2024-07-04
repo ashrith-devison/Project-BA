@@ -1,0 +1,94 @@
+body {
+    overflow: hidden;
+}
+
+.header-center > div {
+    margin: 3%;
+}
+
+.header-center {
+    display: flex;
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+}
+
+.table {
+    width: 70vw;
+    border-radius: 120px;
+}
+
+th {
+    background-color: #0077b6;
+    color: white;
+}
+
+tr:nth-child(odd) td {
+    background-color: white;
+}
+
+tr:nth-child(even) td {
+    background-color: #caf0f8;
+}
+
+caption {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: blue;
+}
+
+.table-container {
+    height: 82%;
+    overflow-y: scroll;
+    margin: 25px;
+    position: relative;
+    left: 15%;
+}
+
+label {
+    margin-right: 10px;
+}
+
+
+
+.results-select{
+    height: 35px;
+    background-color: #337ab7; 
+    color: white; 
+    flex-grow: 1;
+}
+
+#spotlight {
+    width: 35vw;
+    display: flex;
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+}
+
+#spotlight input {
+    height: 30px;
+    margin-left: 4%;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+#spotlight > form {
+    width: 90%;
+    margin: auto;
+}
+
+#spotlight > input {
+    margin: auto;
+}
+
+#spotlight button {
+    position: relative;
+    left: 40%;
+}

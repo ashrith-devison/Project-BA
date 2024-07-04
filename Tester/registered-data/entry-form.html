@@ -1,0 +1,64 @@
+
+<form action="" style="position: relative; top: 25%; z-index: 2" onsubmit="return false;" class="form">
+      <div class="close-button-div">
+        <span class="close-button" onclick="closeForm()">✖</span>
+    </div>
+      <h3 style="text-align: center; font-weight: bolder">RESULTS</h3>
+      <div>
+        <h4 style="text-align: center;"><strong class="blink"><em>Status: </em><em id ='entry-status'>Pending</em></strong></h4>
+      </div>
+      <div id = 'remarks-display'>
+        
+      </div>
+        <input type="number" id = 'test-id'  placeholder="Test Name" hidden>
+        <fieldset>
+          <label name="emp-id">Employee ID</label>
+          <input type="number" id ='emp-id' name="emp-id" placeholder="ID" disabled>
+        </fieldset>
+        <fieldset>
+        <label name="test-percent">Alcohol Percentage</label>
+        <input type="number" id = 'test-percent' name="test-percent" placeholder="Percentage" onchange="statusChange();"
+        min="0" max="100" step="0.00001">
+        </fieldset>
+        <fieldset>
+          <label name="device-no">Device Number</label>
+          <input type="text" id="device-no" name="device-no" placeholder="Device Number">
+        </fieldset>
+        <fieldset>
+          <label name="tester-name">Tester Name</label>
+          <input type="text" id='tester-name' name="tester-name" placeholder="Tester - Name">
+        </fieldset>
+        <fieldset id="remarks-div" hidden>
+          <label name="remarks">Remarks : </label>
+          <input type="text" id="remarks" name="remarks" placeholder="Remarksz">
+        </fieldset>
+        <button onclick="updateStatus();" id="entry-form-submit" class="btn btn-success">Submit</button>
+        <br><br>
+</form>
+
+<style>
+  @keyframes blink {
+      0% {color: red;}
+      25% {color: blue;}
+      50% {color: green;}
+      75% {color: yellow;}
+      100% {color: red;}
+  }
+  .blink {
+      animation: blink 1s linear infinite;
+  }
+  .close-button-div {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+  }
+  .close-button {
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: red;
+      padding: 10px;
+      border-radius: 5px;
+  }
+</style>
+

@@ -1,0 +1,75 @@
+
+<div class="settings-container" style="width:70vw">
+    <div class="settings-sidebar">
+        <h2> <i class="fas fa-cogs"></i> Settings  <i class="fas fa-cogs"></i></h2>
+        <ul>
+            <!-- <li><a  onclick="changePercentinit();"><i class="fas fa-edit"></i>  Change Percent</a></li> -->
+            <li><a onclick="addEmployeeinit();"><i class="fas fa-user-plus"></i>Add Employee</a></li>
+            <li><a onclick="manageUserinit();"><i class="fas fa-user"></i>Manage Users</a></li>
+            <li><a onclick="changePercentOverallinit();"><i class="fas fa-user"></i>Change Percent </a></li>
+            <li><a onclick="records_init();"><i class="fas fa-file-alt"></i>View Records</a></li>
+        </ul>
+    </div>
+    <div class="settings-content" id="settings-content">
+        <h2>System Settings</h2>
+        <p>Here you can configure various settings for the system.</p>
+        <p>For example, you can change the system theme, set up notifications, and manage user accounts.</p>
+    </div>
+</div>
+
+<style>
+    i{
+        margin-right: 10px;
+    }
+    .settings-container {
+        display: flex;
+    }
+
+    .settings-sidebar i {
+        color: #0a2388; /* vibrant blue */
+        font-size: 20px; /* increase size */
+    }
+    
+    .settings-sidebar {
+        width: 25%;
+        height: 100vh;
+        background-color: #f3f3f3;
+        padding: 20px;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        border-right: 1px solid #ccc;
+    }
+
+    .settings-sidebar h2 {
+        font-size: 24px;
+        color: #010101;
+        margin-bottom: 20px;
+    }
+
+    .settings-sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .settings-sidebar ul li {
+        margin-bottom: 10px;
+    }
+
+    .settings-sidebar ul li a {
+        color: #0b0d0e;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .settings-sidebar ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .settings-content {
+        width: 75%;
+        padding: 20px;
+        background-color: #d9e1e5;
+        color: #005b99;
+        border-left: 3px solid #1a1a1a;
+    }
+</style>

@@ -1,0 +1,134 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color:black;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    width: 150px;
+    height: 100px;
+}
+
+
+.main {
+    background-image: url("./Pictures/wp9579853-plane-landing-wallpapers.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.main .content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.main .content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.main .content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.main .content .buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.main .content .buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer1, .footer2, .footer3 {
+    display: flex;
+    align-items: center;
+    background-color: #495057;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer1 img, .footer2 img, .footer3 img {
+    height: 280px;
+    width: 300px;
+    margin-right: 20px;
+}
+
+.footer1 .blur-background, .footer2 .blur-background, .footer3 .blur-background {
+    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.4);
+    margin: 20px;
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.footer2 {
+    background-color: #118ab2;
+}
+
+.footer3 {
+    background-color: #e9edc9;
+    color: black;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.808);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+}
+
+.footer > div a {
+    text-decoration: none;
+    color: grey;
+}
+
+.footer h3 {
+    color: white;
+}
+
+.about-us, .helpful-links, .contact-us {
+    flex: 1;
+    padding: 10px 40px;
+    box-sizing: border-box;
+}
+.buttons {
+    text-align: center; /* Center the button */
+    margin: 20px; /* Add some margin around the button */
+}
+
+.buttons a {
+    text-decoration: none; /* Remove underline from link */
+    color: white; /* Set text color */
+    background-color: #007BFF; /* Set background color */
+    padding: 10px 20px; /* Add padding inside the button */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Make text bold */
+    display: inline-block; /* Make the link behave like a button */
+}
+
+.buttons a:hover {
+    background-color: #0056b3; /* Change background on hover */
+}
+

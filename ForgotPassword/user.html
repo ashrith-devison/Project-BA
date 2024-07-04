@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./ForgotPassword.js"></script>
+    <script src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <title>AAI</title>
+    <style>
+        body {
+            overflow: hidden;
+            margin: 0%;
+        }
+        .home-page {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            background-image: url("../Pictures/login-bg.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="home-page">
+        <div style="width: 450px; height: 300px; position: relative;left: 8%;top: 20%;">
+            <h2 class="text-center">FORGOT PASSWORD</h2>
+            <form autocomplete="off">
+                <div class="form-group
+                ">
+                    <label for="username" style="margin-bottom: 3px; color: #D3D3D3;">Employee ID:</label>
+                    <input type="text" class="form-control" id="emp-username" placeholder="Enter username" style="margin-bottom: 5px;">
+                </div>
+                <div class="form-group
+                ">
+                    <label for="email" style="margin-bottom: 3px; color: #D3D3D3;">Email</label>
+                    <input type="email" class="form-control" id="emp-email" placeholder="Enter email"  style="margin-bottom: 5px;">
+                </div>
+                <div id="otp-enable">
+                    
+                </div>
+                <button type="button" onclick="validate();" id="otp-send" class="btn btn-primary btn-block" style="margin-top: 15px; width: 100%;">Send OTP</button>
+                <br>
+            </form>
+            <div class="text-center mt-3">
+                <a href="/UserLogin" class="text-muted" style="text-decoration: underline; color: #01010f;">Login</a>
+            </div>
+        </div>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>

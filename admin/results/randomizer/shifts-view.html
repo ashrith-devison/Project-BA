@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/project-ba/styles/table.css">
+    <script src="/project-ba/randomizer/shifts-view.js"></script>
+    <script src="/project-ba/scripts/print.js"></script>
+    
+</head>
+<body>
+    <form>
+        <select id="department-selection" required>
+            <option selected>Select Department</option>
+            <option value="1">CNS</option>
+            <option value="2">ATC</option>
+            <option value="3">ATM</option>
+            <option value="4">BHARAT</option>
+            <option value="5">FIRE</option>
+        </select>
+        <select id="shift-selection" required onchange="display()">
+            <option value=""></option>
+            <option value="S1">Shift - I</option>
+            <option value="S2">Shift - II</option>
+            <option value="S3">Shift - III</option>
+            <option value="GEN">General</option>
+        </select>
+    </form>
+    <div id="requested-data"></div>
+    <div id="loaded-data"></div>
+</body>
+</html>

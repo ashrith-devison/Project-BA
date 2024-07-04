@@ -1,0 +1,92 @@
+
+<form onsubmit="updatePercentDB();return false;">
+        <div class="form-group">
+            <label for="select1"><h4>Department :</h4></label>
+            <select id="department-percent-change">
+                <option value="">select department</option>
+                <option value="2">ATC</option>
+                <option value="1">CNS</option>
+                <option value="5">DRIVERS</option>
+                <option value="4">ELECTRICAL</option>
+                <option value="3">FIRE</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="select2"><h4>Shift : </h4></label>
+            <select id="shift-percent-change">
+                <option value="">select shift</option>
+                <option value="S1" id="shift-1">Shift - 1</option>
+                <option value="S2" id="shift-2">Shift - 2</option>
+                <option value="S3" id="shift-3">Shift - 3</option>
+                <option value="GEN" id="general">General</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="input1"><h4>Enter Password : </h4></label>
+            <input type="password" id="password-percent-change">
+        </div>
+        <div class="form-group">
+            <label for="input2"><h4>Enter Percent : </h4></label>
+            <input type="number" id="percent-change">
+        </div>
+        <button type="submit">Update</button>
+</form>
+
+<style>
+    form {
+    background-color: #e6e5e5; /* Light gray background */
+    padding: 2rem; /* Padding around the form */
+    border-radius: 4px; /* Rounded corners */
+    max-width: 600px; /* Maximum width */
+    margin: 0 auto; /* Center the form */
+    border: solid rgb(113, 109, 109);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between; /* Space out the label and field */
+    align-items: center; /* Vertically align the label and field */
+}
+
+.form-group label {
+    flex: 1; /* Take up 1 part of the space */
+    margin-right: 1rem; /* Space between the label and field */
+    font-weight: bold;
+}
+
+.form-group select, .form-group input {
+    flex: 2; /* Take up 2 parts of the space */
+    width: 40%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #f3f3f3;
+    color: #333;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.form-group select:focus, .form-group input:focus {
+    outline: none;
+    border:1px solid black;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 30%;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #0078d4;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto; /* Center the button */
+}
+
+button[type="submit"]:hover {
+    background-color: #005999;
+}
+</style>
