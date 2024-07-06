@@ -38,11 +38,6 @@
         if(!$conn){
             die("Connection Error");
         }
-        else{
-            $sql = "DELETE FROM shift_assigned WHERE randomized_time < CURDATE();";
-            $conn->query($sql);
-            
-        }
         foreach($data as $emp){
             list($empid, $empname) = $emp;
             echo "<tr>";
