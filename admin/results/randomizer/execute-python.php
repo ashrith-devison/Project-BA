@@ -26,9 +26,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
                 '<br>Next Randomizer will be executed on '.$next_dt.'</strong></h4>"}';
         }
         else{
-            $deletequery = "DELETE s FROM shift_assigned s JOIN employees e ON s.employee_id = e.employee_id 
-            WHERE s.ShiftID = '$shift' AND e.Department_Id = $dept";
-            $conn->query($deletequery);
             $percent = $row['percent'];
             chdir('../../');
             $directory = getcwd();
