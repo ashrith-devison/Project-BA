@@ -12,8 +12,8 @@
         $ToDate = $request['toDate'];
         $sql = "SELECT * FROM shift_assigned s, employees e, ba_test t WHERE  s.ShiftID = '$shift' AND 
         s.employee_id = e.employee_id AND e.Department_Id = $department AND t.Employee_ID = e.employee_id 
-        AND ((DATE(s.randomized_time) BETWEEN '$FromDate' AND '$ToDate') OR ( DATE(t.test_time) BETWEEN '$FromDate' AND '$ToDate')) 
-        AND t.Test_ID = s.id";
+        AND ((DATE(s.randomized_time) BETWEEN '$FromDate' AND '$ToDate') OR ( DATE(t.test_time) BETWEEN '$FromDate' AND '$ToDate'))";
+        
         $result = $conn->query($sql);
         echo "<table class='table'>";
         echo "<thead>";
