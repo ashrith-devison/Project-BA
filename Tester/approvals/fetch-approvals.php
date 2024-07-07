@@ -1,5 +1,5 @@
 <?php
-    $conn = new mysqli('localhost','root','','project-ba');
+    require '../../database.php';
     if($conn->connect_error){
         die("Connection failed: ".$conn->connect_error);
     }   

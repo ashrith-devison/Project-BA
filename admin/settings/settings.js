@@ -65,7 +65,7 @@ function records_init(){
     console.log("Records Init");
     recordForm= `
     <form action="">
-              <select id="department-selection-result" class="form-control" required style="margin-top:6px">
+              <select id="department-selection-result" class="form-control" required style="margin-top:6px" onchange='$("#shift-selection").val("");'>
                 <option value="">DEPARTMENT</option>
                 <option value="2">ATC</option>
                 <option value="1">CNS</option>
@@ -73,7 +73,7 @@ function records_init(){
                 <option value="4">ELECTRICAL</option>
                 <option value="3">FIRE</option>
               </select>
-                <select id="shift-selection" class="form-control" required  style="margin-top:4px">
+                <select id="shift-selection" class="form-control" required  style="margin-top:4px" onchange='$("#fetch-record-from-date").val(""); $("#fetch-record-to-date").val("");'>
                     <option value="">SHIFT</option>
                     <option value="S1" id="shift-1">Shift - 1</option>
                     <option value="S2" id="shift-2">Shift - 2</option>
