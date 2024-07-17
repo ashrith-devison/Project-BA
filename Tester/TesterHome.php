@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/bootstrap-3.4.1/css/bootstrap.min.css">
   <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-  <link rel="stylesheet" href="/admin/home-page/home.css">
+  <link rel="stylesheet" href="/Tester/home-page/home.css">
   <script src="/login/tester-authentication.js"></script>
-  <title>HOD - HOME</title>
   <link rel="stylesheet" href="/font-awesome-icons/css/all.min.css">
+  <title>AAI-Home</title>
 </head>
 <body>
   <script src="/node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
@@ -28,7 +28,7 @@
         $request['userid'] = '';
     }
 ?></p>
-    <div class="header-left" style="width: 20vw;"><img src="/admin/home-page/images/AAI-Logo.png" alt="" class="image-fluid" style="width: 150px; height: 100px;"></div>
+    <div class="header-left" style="width: 20vw;"><img src="/Tester/home-page/images/AAI-Logo.png" alt="" class="image-fluid" style="width: 150px; height: 100px;"></div>
     <div class="header-center" style="width: 70vw;">
       <div><button class="btn btn-success" onclick="home_reset();" style="display: flex; align-items: center;"><svg style="margin-right: 8px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-home"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
       HOME</button></div>
@@ -46,6 +46,8 @@
     </div>
       <div><button type = "button" onclick="employee_home()" class="btn btn-primary" style="display: flex; align-items: center;"><svg style="margin-right: 8px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
     </svg>EMPLOYEE</button></div>
+      <div><button onclick="fetch_approvals();" type="button" class="btn btn-primary" style="display: flex; align-items: center;"><svg style="margin-right: 8px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-notebook-pen"><path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4"/><path d="M2 6h4"/><path d="M2 10h4"/><path d="M2 14h4"/><path d="M2 18h4"/><path d="M18.4 2.6a2.17 2.17 0 0 1 3 3L16 11l-4 1 1-4Z"/>
+    </svg>APPROVALS</button></div>
     <div style="height: 20px; width: 20px; padding: 2px; position: absolute; left: 91%; top: 2.3%;">
     <a href="/UserLogin.html">
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="#337ab7" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-out">
@@ -55,18 +57,13 @@
         </svg>
     </a>
     </div>
-      <div><button id='results-view-home' onclick="fetch_result_data(); " type="button" class="btn btn-primary" style="display: flex; align-items: center;"><svg style="margin-right: 8px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-notebook-pen"><path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4"/><path d="M2 6h4"/><path d="M2 10h4"/><path d="M2 14h4"/><path d="M2 18h4"/><path d="M18.4 2.6a2.17 2.17 0 0 1 3 3L16 11l-4 1 1-4Z"/>
-    </svg>RESULTS</button></div>
     </div>
     <div class="header-right" style="position: relative; right: 4%;top: 18%;height: fit-content;" data-toggle="tooltip"
     id='user-profile'
-    ><div style="height: 50px;width: 50px;background-color: black;border-radius: 100%;">
-  </div>
-  <button type='button' id="user-profile-dropdown" onclick='settingsinit();'>settings</button>
-</div>
+    ><div style="height: 50px;width: 50px;background-color: black;border-radius: 100%;"></div></div>
   </div>
   
-  <div class="home-content" style="height: 80vh;width: 100vw ; background-image: url('/admin/home-page/images/Airglobe-transformed.jpeg'); background-size: cover; background-repeat: no-repeat; display: flex;">
+  <div class="home-content" style="height: 80vh;width: 100vw ; background-image: url('/Tester/home-page/images/Airglobe-transformed.jpeg'); background-size: cover; background-repeat: no-repeat; display: flex;">
     <div class="container">  
         <div id="shift-form" class="form-group" hidden>
             <form action="">
@@ -87,13 +84,13 @@
                 </select>
             </form>
         </div>
-    <div class="table-container" id="request-table" style="position:absolute;left:12vw;height:60%;display:none;padding:6px; border-radius:10px;">
+    <div class="table-container" id="request-table" style="position:absolute;left:12vw;height:60%;display:none;padding:6px">
       <div class="continue"><button class="btn btn-success" style="position: relative;left: 90%;">Print</button></div>
     </div>
   </div>
-  <div id='spotlight'>
-    
-  </div>
+    <div id="spotlight">
+      
+    </div>
       <br>
     </div>
   </div>
@@ -103,4 +100,4 @@
   <script src="/bootstrap-3.4.1/js/bootstrap.min.js"></script>
   <script src="/Tester/home-page/home.js"></script>
 </body>
-</html>v
+</html>
