@@ -1,7 +1,8 @@
 
 // Description: This file contains the authentication logic for the login page.
 $(()=>{
-    user_role = sessionStorage.getItem('role');
+    user_role = atob(sessionStorage.getItem('role'));
+    console.log(user_role);
 auth_roles = ['HOD_1','HOD_2','HOD_3','HOD_4','HOD_5','admin'];
 var access = 1;
 for(var role in auth_roles){

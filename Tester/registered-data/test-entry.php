@@ -10,8 +10,8 @@
             $shift = $request->shift;
             $query = "SELECT * FROM shift_assigned s, ba_test t, employees e WHERE e.Department_id = $department 
             AND s.Employee_ID = e.Employee_ID AND t.Employee_ID = e.Employee_ID AND s.ShiftID = '$shift' AND
-            ((t.Status = 'Rejected - I' AND DATE_ADD(t.test_time, INTERVAL 15 MINUTE) < NOW()) OR t.Status = 'Pending')
-            AND t.Test_ID = s.id";
+            ((t.Status = 'Positive' AND DATE_ADD(t.test_time, INTERVAL 15 MINUTE) < NOW()) OR t.Status = 'Pending')
+            AND t.Test_ID = s.id AND DATE(s.randomized_time) = CURDATE()";
             $result = $conn->query($query);
             
             $data = array(

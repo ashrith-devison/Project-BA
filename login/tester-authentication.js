@@ -3,7 +3,7 @@ $(()=>{
     auth_role = ['tester'];
     var access = 1;
     for(var role in auth_role){
-        if(sessionStorage.getItem('role') === auth_role[role]){
+        if(atob(sessionStorage.getItem('role')) === auth_role[role]){
             console.log("Tester Logged In Successfully ...");
             access = 0;
             break;

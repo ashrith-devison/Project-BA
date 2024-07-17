@@ -1,7 +1,7 @@
 function fetch_employee_view(){
     const data = {
         userid : sessionStorage.getItem('userid'),
-        role : sessionStorage.getItem('role')
+        role : atob(sessionStorage.getItem('role'))
     };
     if(!verify_path(data)){
         return;

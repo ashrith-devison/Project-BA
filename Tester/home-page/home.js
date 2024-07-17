@@ -1,7 +1,8 @@
 document.getElementById('UserId').innerHTML = sessionStorage.getItem('userid') || '';
 document.getElementById('user-profile').title= sessionStorage.getItem('userid') || '';
 console.log(sessionStorage.getItem('userid') || 'No User ID');
-console.log(sessionStorage.getItem('role') || 'No Role');
+console.log(atob(sessionStorage.getItem('role')) || 'No Role');
+console.log("Halo");
 
 function loadScript(link,callback){
     var existingScript = document.querySelector('script[src="'+link+'"]');

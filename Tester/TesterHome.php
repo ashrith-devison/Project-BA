@@ -6,8 +6,9 @@
   <link rel="stylesheet" href="/bootstrap-3.4.1/css/bootstrap.min.css">
   <script src="/node_modules/jquery/dist/jquery.min.js"></script>
   <link rel="stylesheet" href="/admin/home-page/home.css">
-  <script src="/login/authentication.js"></script>
+  <script src="/login/tester-authentication.js"></script>
   <title>HOD - HOME</title>
+  <link rel="stylesheet" href="/font-awesome-icons/css/all.min.css">
 </head>
 <body>
   <script src="/node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
@@ -33,7 +34,7 @@
       HOME</button></div>
       <div style="height: 35px; background-color: #337ab7; color: white; display: flex; align-items: center;">
         <svg style="margin-right: 8px; margin-left: 7px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-        <select name="" id="department-selection" onchange="fetch_allocation_data();"
+        <select name="" id="department-selection" onchange="fetch_registered_data();"
             style="height: 35px; background-color: #337ab7; color: white; flex-grow: 1;">
             <option value="">DEPARTMENT</option>
             <option value="2">ATC</option>
@@ -100,6 +101,6 @@
   <div style="height: 20px; width: 20px; padding: 2px; position: absolute; left: 5%; top: 90%;"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#337ab7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-big-left-dash"><path d="M19 15V9"/><path d="M15 15h-3v4l-7-7 7-7v4h3v6z"/></svg></a></div>
 
   <script src="/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="/admin/home-page/home.js"></script>
+  <script src="/Tester/home-page/home.js"></script>
 </body>
 </html>v

@@ -63,7 +63,7 @@ function validate(){
                 });
                 history.replaceState({}, null, data.url);
                 sessionStorage.setItem('userid',data.userid);
-                sessionStorage.setItem('role',data.role);
+                sessionStorage.setItem('role',btoa(data.role));
             })
         }
     })
