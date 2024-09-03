@@ -105,15 +105,15 @@ function verifyotp(){
 
 function enableOtpScreen(){
     const content = `
-                    <div class="form-group>
-                        <label for="otp" style="margin-bottom: 3px; color: #D3D3D3;">OTP</label>
-                        <input type="text" class="form-control" id="emp-otp" placeholder="Enter OTP" style="margin-bottom: 5px;">
+                   <div class="form-floating mb-3 mt-3">
+                        <input type="text" class="form-control" id="emp-otp" placeholder="Enter OTP"  name="otp">
+                        <label for="otp">OTP</label>
                     </div>
-                    <div class="form-group>
-                        <label for="new-password" style="margin-bottom: 3px; color: #D3D3D3;">New Password</label>
-                        <input type="password" class="form-control" id="emp-new-password" placeholder="Enter new password" style="margin-bottom: 5px;">
+                    <div class="form-floating mb-3 mt-3">
+                        <input type="password" class="form-control" id="emp-new-password" placeholder="Enter new password" name="password">
+                        <label for="password">New Password</label>
                     </div>
-                    <button onclick='verifyotp();' type='button' class="btn btn-primary btn-block" >Update</button>`;
+                    <button onclick='verifyotp();' type='button' class="btn btn-primary btn-block" style="margin-top: 15px; width: 100%;" >Update</button>`;
     $('#emp-username').attr('disabled', 'true');
     $('#emp-email').attr('disabled', 'true');
     $('#otp-enable').html(content);
