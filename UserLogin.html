@@ -82,17 +82,18 @@
     </div>
 
     <script>
-        document.getElementById('           showPwd').addEventListener('change', function() {
-            var pwdField = document.getElementById('passkey');
-            if (this.checked) {
-                pwdField.type = 'text';
-            } else {
-                pwdField.type = 'password';
-            }
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('showPwd').addEventListener('change', function() {
+                var pwdField = document.getElementById('passkey');
+                if (this.checked) {
+                    pwdField.type = 'text';
+                } else {
+                    pwdField.type = 'password';
+                }
+            });
         });
-        sessionStorage.clear();
     </script>
-        <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
